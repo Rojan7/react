@@ -4,22 +4,20 @@ function App() {
 
   return (
     <>
-      <div
-        className="w-full  h-screen duration-200  "
-        style={{ backgroundColor: color }}
-      >
-        <div className=" fixed flex flex-wrap justify-center bottom-12 inset-x-0 px-2">
-          <div className="flex flex-wrap justify-center gap-3 shadow-lg bg-white px-3 py-2 rounded-xl ">
-            <button onClick={()=>setColor("red")} className="outline-none px-4 py-1 rounded-full text-white shadow-lg" style={{backgroundColor:"red"}}>Red</button>
-            <button onClick={()=>setColor("blue")} className="outline-none px-4 py-1 rounded-full text-white shadow-lg" style={{backgroundColor:"blue"}}>blue</button>
-            <button onClick={()=>setColor("black")} className="outline-none px-4 py-1 rounded-full text-white shadow-lg" style={{backgroundColor:"black"}}>black</button>
-            <button onClick={()=>setColor("grey")} className="outline-none px-4 py-1 rounded-full text-white shadow-lg" style={{backgroundColor:"Grey"}}>Grey</button>
-            <button onClick={()=>setColor("orange")} className="outline-none px-4 py-1 rounded-full text-white shadow-lg" style={{backgroundColor:"Orange"}}>Orange</button>
-          </div>
-        </div>
+     <div className="justify-center w-full h-screen duration-200 flex items-end" style={{backgroundColor:color }}>
+     <div className="bg-slate-500 fixed flex justify-center gap-3  px-3 py-3 rounded-3xl">
+      \
+    
+           <button style={{backgroundColor:"red"}} className="rounded-xl px-2 py-1 text-white gap-3" onClick={()=>setColor("red")}>Red</button>
+           <button style={{backgroundColor:"green"}} className="rounded-xl px-2 py-1 text-white " onClick={()=>setColor("green")}>Green</button>
+           <button style={{backgroundColor:"Black"}} className="rounded-xl px-2 py-1 text-white " onClick={()=>setColor("Black")}>Black</button>
+           <button style={{backgroundColor:"Blue"}} className="rounded-xl px-2 py-1 text-white " onClick={()=>setColor("Blue")}>Blue</button>
+           
+      </div>
       </div>
     </>
   );
 }
 
 export default App;
+  
