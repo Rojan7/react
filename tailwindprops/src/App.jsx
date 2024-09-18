@@ -13,9 +13,9 @@ function App() {
 
   return (
     <>
-     <h1 className='bg-green-300 text-black p-4 rounded-2xl mb-4'>Tailwind Css</h1>
-    <Card username = "Ammy"  btnText = "Click Me"/>
-    <Card username = "Grammy" btnText="Text Me" />
+     <h1 className='bg-green-300 text-black p-4 rounded-2xl mb-4'>Employee </h1>
+    <Card username = "Ammy"  btnText = "Click Me" paraText="Ammy wants grammy"/>
+    <Card username = "Grammy" btnText="Text Me" paraText ="Grammy wants granny" />
 
    
      

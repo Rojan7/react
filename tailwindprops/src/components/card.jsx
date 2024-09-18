@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Card({username,btnText = "thoko ji thoko"}) {//or props.username
+function Card({username,btnText = "thoko ji thoko",paraText}) {//or props.username
     
     return (
         <div class="relative h-[400px] w-[300px] rounded-md">
@@ -13,16 +13,16 @@ function Card({username,btnText = "thoko ji thoko"}) {//or props.username
         <div class="absolute bottom-4 left-4 text-left">
           <h1 class="text-lg font-semibold text-white">{username}</h1>
           <p class="mt-2 text-sm text-gray-300">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
-            debitis?
+           {paraText}
           </p>
           <button class="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-white">
            {btnText}
           </button>
         </div>
-      </div>
+      </div> 
         
     )
 }
 
 export default Card
+
