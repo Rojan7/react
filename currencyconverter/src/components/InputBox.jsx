@@ -1,4 +1,5 @@
-import React, {useId} from 'react'
+import React, {useId} from 'react'//useId is a hook that generates a unique ID for each component instance,
+                                   //  used to ensure unique identifiers in forms
 
 function InputBox({
     label,
